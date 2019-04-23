@@ -1,6 +1,6 @@
-@mixin mq($break,$breakPointsList:('sm':576px,'md':769px)){
-    $value:map-get($breakPointsList,$break );
-    $sm: map-get($break, 'sm' );
+@mixin mq($break){
+    $value:map-get($breakpoints,$break );
+    $sm: map-get($breakpoints, 'sm' );
 
     @if $value < $sm {
         @media(max-width:$value){
@@ -9,10 +9,10 @@
     }
 }
 
-@mixin flex($disp:flex,$dir:null,$wrap:null,$just:null,$al-items:null){
-    align-items: $al-items;
+@mixin dflex($disp:flex,$dir:null,$wrap:null,$just:null,$al-items:null){
     display:$disp;
     flex-direction: $dir;
     flex-wrap: $wrap;
     justify-content:$just;
+    @content;
 }
