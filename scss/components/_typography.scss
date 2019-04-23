@@ -1,7 +1,13 @@
 /*Font CSS*/
 @import url('https://fonts.googleapis.com/css?family=Bangers|Lato');
 
+// General Font
+body{
+    font-family: $font-stack-primary;
+}
+
+
 .headline--primary{
-    font-family:$font-stack-secondary;
+    font-family:$font-stack-heading;
     color:$text-primary;
 }

@@ -1,10 +1,15 @@
 // Breakpoints
-$breakpoints:('sm':576px,'md':768px,'lg':992px);
-
+$breakpoints: (
+  'xs': 575px,
+  'sm': 576px,
+ 'md': 768px,
+  'lg': 992px,
+);
+$break-s:576px;
 // Fonts
 $font-stack-primary: 'Lato', sans-serif;
 
-$font-stack-secondary: 'Bangers', cursive;
+$font-stack-heading: 'Bangers', cursive;
 
 // Color Scheme
 $bg-primary:"#7D8CC4";
