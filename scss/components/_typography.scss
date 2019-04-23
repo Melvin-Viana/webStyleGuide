@@ -1,1 +1,7 @@
+/*Font CSS*/
 @import url('https://fonts.googleapis.com/css?family=Bangers|Lato');
+
+.headline--primary{
+    font-family:$font-stack-secondary;
+    color:$text-primary;
+}

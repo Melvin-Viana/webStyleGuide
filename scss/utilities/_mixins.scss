@@ -8,3 +8,11 @@
         }
     }
 }
+
+@mixin flex($disp:flex,$dir:null,$wrap:null,$just:null,$al-items:null){
+    align-items: $al-items;
+    display:$disp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content:$just;
+}

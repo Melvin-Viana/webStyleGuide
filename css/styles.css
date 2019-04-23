@@ -1,6 +1,7 @@
 /*================================
 BASE STYLES
 ==================================*/
+@import url("https://fonts.googleapis.com/css?family=Bangers|Lato");
 * {
   box-sizing: border-box;
 }
@@ -488,6 +489,12 @@ template {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px;
   }
+}
+
+/*Font CSS*/
+.headline--primary {
+  font-family: "Bangers", cursive;
+  color: #594157;
 }
 
 /*# sourceMappingURL=styles.css.map */
