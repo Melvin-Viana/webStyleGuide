@@ -3,4 +3,11 @@
 }
 .nav__item{
     @include dflex($just:center);
+    padding:10px 0;
+&:first-child{
+    background:#22a6b3;
+   & a {
+       color:#fff;
+   }
+}
 }

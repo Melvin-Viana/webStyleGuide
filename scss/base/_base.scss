@@ -8,7 +8,14 @@ BASE STYLES
 ul{
     padding:0;
     list-style-type: none;
-}p {
+}
+a{
+    text-decoration: none;
+ &:visited{
+     color:#0000EF;
+ }
+}
+p {
     line-height: 25px;
     font-size: 14px;
 }

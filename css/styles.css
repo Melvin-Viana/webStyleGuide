@@ -11,6 +11,13 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #0000EF;
+}
+
 p {
   line-height: 25px;
   font-size: 14px;
@@ -423,6 +430,13 @@ template {
 .nav__item {
   display: flex;
   justify-content: center;
+  padding: 10px 0;
+}
+.nav__item:first-child {
+  background: #22a6b3;
+}
+.nav__item:first-child a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
