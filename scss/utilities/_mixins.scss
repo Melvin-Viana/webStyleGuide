@@ -1,0 +1,10 @@
+@mixin mq($break,$breakPointsList:('sm':576px,'md':769px)){
+    $value:map-get($breakPointsList,$break );
+    $sm: map-get($break, 'sm' );
+
+    @if $value < $sm {
+        @media(max-width:$value){
+            @content;
+        }
+    }
+}
