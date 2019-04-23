@@ -394,6 +394,17 @@ ul {
   margin: 0;
 }
 
+button {
+  border: none;
+  background: #fff;
+  outline: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
 .grid__row {
   padding: 1em 10px;
   display: flex;
