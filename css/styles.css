@@ -402,6 +402,7 @@ button {
 
 input {
   border: none;
+  background: #fff;
   outline: none;
 }
 

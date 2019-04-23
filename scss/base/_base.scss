@@ -23,11 +23,9 @@ BASE STYLES
     margin: 0;
   }
 button{
-  border:none;
-  background:#fff;
-  outline:none;
+  @include no-bd-ol();
+
 }
 input{
-  border:none;
-  outline:none;
+ @include no-bd-ol();
 }
