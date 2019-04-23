@@ -1,4 +1,6 @@
 .link{
-  & &{}
-
+    @include dflex($just:center);
+}
+.nav__item{
+    @include dflex($just:center);
 }

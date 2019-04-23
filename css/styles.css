@@ -415,4 +415,14 @@ template {
   color: #594157;
 }
 
+.link {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__item {
+  display: flex;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
