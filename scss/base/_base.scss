@@ -1,31 +1,13 @@
-/*=================================
+/*================================
 BASE STYLES
-===========================*/
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Raleway');
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    color: #343434;
-    line-height: 1.5;
-    font-family: "Raleway", sans-serif;
-    width:80%;
-  }
- p {
-    font-family: "Bree Serif", serif;
-    font-size:1.2rem;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-button{
-  @include no-bd-ol();
+==================================*/
 
+*{
+    box-sizing: border-box;
 }
-input{
- @include no-bd-ol();
+ul{
+    padding:0;
+}p {
+    line-height: 25px;
+    font-size: 14px;
 }
