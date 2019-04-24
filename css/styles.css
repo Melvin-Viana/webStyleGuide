@@ -609,4 +609,24 @@ template {
   color: #22a6b3;
 }
 
+.img--frame, .img--avatar {
+  display: block;
+  margin: auto;
+}
+
+.img--frame {
+  margin-bottom: 25px;
+  padding: 5px;
+  border: 1px #ccc solid;
+  -webkit-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.37);
+}
+@media (max-width: 479px) {
+  .img--frame {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
