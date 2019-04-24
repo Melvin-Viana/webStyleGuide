@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Lato");
 /*================================
 BASE STYLES
 ==================================*/
-@import url("https://fonts.googleapis.com/css?family=Bangers|Lato");
 * {
   box-sizing: border-box;
 }
@@ -12,11 +12,7 @@ ul {
 }
 
 a {
-  color: #594157;
   text-decoration: none;
-}
-a:visited {
-  color: #594157;
 }
 
 p {
@@ -500,21 +496,69 @@ template {
   }
 }
 
+/*TYPOGRAPHY SECTION*/
 .container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-/*Font CSS*/
-body {
   font-family: "Lato", sans-serif;
+  margin: 0 auto;
+  width: 90%;
+}
+.container .link {
+  color: #a79dea;
+  font-weight: 700;
 }
 
 .headline--primary {
   font-family: "Bangers", cursive;
   color: #4834d4;
+  padding-left: 10px;
 }
 
+.blockquote {
+  border-left: 5px solid #4834d4;
+  border-radius: 2px;
+  font-style: italic;
+  line-height: 1.3;
+  margin: 0 15px;
+  padding-left: 15px;
+}
+
+.headline--secondary {
+  color: #22a6b3;
+}
+
+.form__label--hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form .img--avatar {
+  align-self: center;
+  margin: 15px 0;
+}
+.form .form__input, .form .btn--default {
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.form__input {
+  border-bottom: 3px solid #4834d4 !important;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.btn--default {
+  background-color: #22a6b3;
+  border-radius: 2px;
+  color: #fff;
+}
+
+/*Nav Styles*/
 .img--logo {
   display: block;
   margin: auto;
@@ -526,7 +570,7 @@ body {
   justify-content: center;
 }
 .nav__item a {
-  color: #594157;
+  color: #22a6b3;
 }
 .nav__item:first-child {
   background: #22a6b3;
@@ -539,7 +583,7 @@ body {
     background: #fff;
   }
   .nav__item:first-child a {
-    color: #594157;
+    color: #22a6b3;
   }
 }
 @media (min-width: 768px) {
@@ -553,10 +597,16 @@ body {
     display: inline;
   }
 
-  nav {
+  .nav {
     float: right;
     margin-top: 14px;
   }
+}
+.nav li a {
+  color: #22a6b3;
+}
+.nav li a:visited {
+  color: #22a6b3;
 }
 
 /*# sourceMappingURL=styles.css.map */

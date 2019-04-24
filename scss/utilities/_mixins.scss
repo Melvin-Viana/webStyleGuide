@@ -20,3 +20,9 @@
     justify-content:$just;
     @content;
 }
+
+// Width by Percentage, centered
+@mixin width-pc($perc){
+  margin:0 auto;
+  width:$perc;
+}

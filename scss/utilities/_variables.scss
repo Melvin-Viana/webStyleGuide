@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Lato');
+
 // Breakpoints
 $breakpoints: (
   'xs': 575px,
@@ -13,5 +15,7 @@ $font-stack-heading: 'Bangers', cursive;
 
 // Color Scheme
 
-$color-text-primary:#594157;
-$color-text-secondary:#4834d4;
+$color-primary:#22a6b3;
+$color-secondary:#4834d4;
+
+// Button colors
