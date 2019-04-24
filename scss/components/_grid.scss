@@ -13,18 +13,16 @@
   // .grid__row
   &__row {
     padding: 1em 10px;
-    display: flex;
-    flex-direction: column;
+    @include dflex($dir:column);
 
     // NOTE: replace with media query mixin if aiming for exceeds
     @include mq('md') {
-      flex-direction: row;
+      @include dflex(null,$dir:row);
     }
   }
 
   // .grid__col
   &__col {
-
     // create grid columns dynamically
     // loop through each column size
     @for $i from 1 through 12 {
@@ -33,20 +31,19 @@
       // selector would be .grid__col--1
       &--#{$i} {
 
-        // base styles applied to all grid columns 
+        // base styles applied to all grid columns
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
         margin-top: 10px;
-        flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
         @include mq('md') {
 
           // base stlyes applied to all grid columns
-          margin-top: 0;
 
           // make column width a percentage of the column number / total columns
-          flex-basis: #{$i / 12 * 100 + "%"} ;
+          width: #{$i / 12 * 100 + "%"} ;
+
         }
       }
     }
@@ -66,3 +63,22 @@
     }
   }
 }
+
+.theme__colors{
+  @each $id, $color in $grid-colors {
+    &.grid__col--#{$id}{
+      background:$color;
+    }
+  }
+  padding: 0.75em 10px;
+  border-radius: 5px;
+}
+
+
+.centered{
+  margin:auto;
+  display:block;
+}
+
+
+

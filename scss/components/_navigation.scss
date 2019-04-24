@@ -7,19 +7,12 @@
 .nav__item{
 padding:10px 0;
 @include dflex($just:center);
-    & a{
-    color:$color-primary;
-    }
     &:first-child{
         background:#22a6b3;
-    & a {
         color:#fff;
-    }
     @include mq('md'){
         background:#fff;
-        & a {
-            color:$color-primary;
-        }
+        color:#000;
     }
 }
 

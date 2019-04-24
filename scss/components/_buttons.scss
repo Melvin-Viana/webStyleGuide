@@ -10,22 +10,20 @@ $id: nth($buttons, $i);
 
 [class^="btn--"] {
     width: 100%;
-    padding: 0.75em 0;
     border: none;
-    border-radius: 5px;
     color: #FFF;
     text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include dflex($dir:column){
+        align-items:center;
+    }
     margin-bottom: 1.25em;
-    font-family: "Lato", sans-serif;
     font-weight: 700;
     }
 
     @include mq('md') {
         .grid__col--12 {
-          display: flex; }
+        @include dflex(); 
+        }
           .grid__col--12 .theme__colors {
             margin: 1.875em 1em;
             } }

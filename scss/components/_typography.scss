@@ -4,12 +4,11 @@
 .container{
     font-family: $font-stack-primary;
     @include width-pc(90%);
+}
 
-
-    .link{
-        color:$color-secondary;
-        font-weight:700;
-    }
+.link{
+    color:$color-secondary;
+    font-weight:700;
 }
 // Text styles
 .headline--primary{
