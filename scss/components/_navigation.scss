@@ -1,14 +1,39 @@
-.link{
-    @include dflex($just:center);
+/*Nav Styles*/ 
+.img--logo{
+    display:block;
+    margin:auto;
 }
+// Nav links
 .nav__item{
-    @include dflex($just:center);
-    padding:10px 0;
-&:first-child{
-    background:#22a6b3;
-   & a {
-       color:#fff;
-   }
+padding:10px 0;
+@include dflex($just:center);
+    & a{
+    color:$color-text-primary;
+    }
+    &:first-child{
+        background:#22a6b3;
+    & a {
+        color:#fff;
+    }
+    @include mq('md'){
+        background:#fff;
+        & a {
+            color:$color-text-primary;
+        }
+    }
+}
+
+@include mq('md'){
+    margin-right:2em;
 }
 }
 
+@include mq('md'){
+    .nav__item{
+        display:inline;
+    }
+    nav{
+        float:right;
+        margin-top:14px;
+    }
+}

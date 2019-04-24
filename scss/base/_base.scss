@@ -10,9 +10,10 @@ ul{
     list-style-type: none;
 }
 a{
+    color:$color-text-primary;
     text-decoration: none;
  &:visited{
-     color:#0000EF;
+     color:$color-text-primary;
  }
 }
 p {

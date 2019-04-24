@@ -12,10 +12,11 @@ ul {
 }
 
 a {
+  color: #594157;
   text-decoration: none;
 }
 a:visited {
-  color: #0000EF;
+  color: #594157;
 }
 
 p {
@@ -511,24 +512,51 @@ body {
 
 .headline--primary {
   font-family: "Bangers", cursive;
-  color: #594157;
+  color: #4834d4;
 }
 
-.link {
-  display: flex;
-  justify-content: center;
+.img--logo {
+  display: block;
+  margin: auto;
 }
 
 .nav__item {
+  padding: 10px 0;
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+}
+.nav__item a {
+  color: #594157;
 }
 .nav__item:first-child {
   background: #22a6b3;
 }
 .nav__item:first-child a {
   color: #fff;
+}
+@media (min-width: 768px) {
+  .nav__item:first-child {
+    background: #fff;
+  }
+  .nav__item:first-child a {
+    color: #594157;
+  }
+}
+@media (min-width: 768px) {
+  .nav__item {
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__item {
+    display: inline;
+  }
+
+  nav {
+    float: right;
+    margin-top: 14px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
