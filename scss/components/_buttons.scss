@@ -1,29 +1,29 @@
-$buttons:'success' 'error' 'warning' 'info';
+$buttons: 'success', 'error', 'warning', 'info';
 
-@for $i from 1 through length($buttons){
-
-$id: nth($buttons, $i);
-    .btn--#{$id} {
-        background: adjust-hue($color-primary,($i*-62));
-    }
+@for $i from 1 through length($buttons) {
+	$id: nth($buttons, $i);
+	.btn--#{$id} {
+		background: adjust-hue($color-primary, ($i * -62));
+	}
 }
 
-[class^="btn--"] {
-    width: 100%;
-    border: none;
-    color: #FFF;
-    text-transform: uppercase;
-    @include dflex($dir:column){
-        align-items:center;
-    }
-    margin-bottom: 1.25em;
-    font-weight: 700;
-    }
+[class^='btn--'] {
+	width: 100%;
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+	@include dflex($dir: column) {
+		align-items: center;
+	}
+	margin-bottom: 1.25em;
+	font-weight: 700;
+}
 
-    @include mq('md') {
-        .grid__col--12 {
-        @include dflex(); 
-        }
-          .grid__col--12 .theme__colors {
-            margin: 1.875em 1em;
-            } }
+@include mq('md') {
+	.grid__col--12 {
+		@include dflex();
+	}
+	.grid__col--12 .theme__colors {
+		margin: 1.875em 1em;
+	}
+}

@@ -1,15 +1,16 @@
-.img--frame,.img--avatar{
-    display:block;
-    margin:auto;
+.img--frame,
+.img--avatar {
+	display: block;
+	margin: auto;
 }
 
-.img--frame{
-    margin-bottom: 25px;
-    padding:5px;
-    border:1px #ccc solid;
-    -webkit-box-shadow: 2px 0px 7px 0px rgba(0,0,0,0.37);
-    -moz-box-shadow: 2px 0px 7px 0px rgba(0,0,0,0.37);
-    box-shadow: 2px 0px 7px 0px rgba(0,0,0,0.37);
-        width: 100%;
-        height: auto;
+.img--frame {
+	margin-bottom: 25px;
+	padding: 5px;
+	border: 1px #ccc solid;
+	-webkit-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.37);
+	-moz-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.37);
+	box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.37);
+	width: 100%;
+	height: auto;
 }
