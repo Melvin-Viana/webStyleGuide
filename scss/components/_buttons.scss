@@ -21,7 +21,7 @@
 
 @include mq('md') {
 	.grid__col--12 {
-		@include dflex();
+			display:flex;
 	}
 	.grid__col--12 .theme__colors {
 		margin: 1.875em 1em;

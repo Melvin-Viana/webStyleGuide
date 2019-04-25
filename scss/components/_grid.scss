@@ -15,7 +15,7 @@
 
 		// NOTE: replace with media query mixin if aiming for exceeds
 		@include mq('md') {
-			@include dflex(null, $dir: row);
+			flex-direction:row;
 		}
 	}
 
