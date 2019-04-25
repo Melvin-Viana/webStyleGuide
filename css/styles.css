@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers|Lato");
+.img--frame {
+  -webkit-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.37);
+}
+
+.img--frame,
+.img--avatar {
+  display: block;
+  margin: auto;
+}
+
 /*================================
 BASE STYLES
 ==================================*/
@@ -500,8 +512,13 @@ template {
 }
 
 .centered {
-  margin: auto;
-  display: block;
+  transition: width 2s ease;
+}
+@media (min-width: 768px) {
+  .centered {
+    display: block;
+    margin: auto;
+  }
 }
 
 /*TYPOGRAPHY SECTION*/
@@ -550,7 +567,8 @@ template {
   align-self: center;
   margin: 15px 0;
 }
-.form .form__input, .form .btn--default {
+.form .form__input,
+.form .btn--default {
   border: none;
   margin-top: 20px;
   outline: none;
@@ -565,8 +583,6 @@ template {
 
 .btn--default {
   background-color: #48dbfb;
-  border-radius: 2px;
-  color: #fff;
 }
 
 .form .btn--default {
@@ -617,18 +633,10 @@ template {
   color: #000;
 }
 
-.img--frame, .img--avatar {
-  display: block;
-  margin: auto;
-}
-
 .img--frame {
   margin-bottom: 25px;
   padding: 5px;
   border: 1px #ccc solid;
-  -webkit-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.37);
-  -moz-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.37);
-  box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.37);
   width: 100%;
   height: auto;
 }
@@ -652,7 +660,7 @@ template {
 [class^=btn--] {
   width: 100%;
   border: none;
-  color: #FFF;
+  color: #fff;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;

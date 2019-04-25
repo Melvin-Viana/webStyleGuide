@@ -1,7 +1,7 @@
-$buttons: 'success', 'error', 'warning', 'info';
 
 @for $i from 1 through length($buttons) {
 	$id: nth($buttons, $i);
+	// Dynamically change colors of buttons
 	.btn--#{$id} {
 		background: adjust-hue($color-primary, ($i * -62));
 	}
