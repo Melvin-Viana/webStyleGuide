@@ -1,7 +1,7 @@
 # FEWD - Web Style Guide
 Utilizing the most used CSS Preprocesser - SASS to build a Web Style Guide.
 
-(https://melvin-viana.github.io/webStyleGuide/)[Web Style Guide]
+[Web Style Guide](https://melvin-viana.github.io/webStyleGuide/)
 
 ## Lessons Learned
 1. Variables
