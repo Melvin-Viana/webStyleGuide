@@ -3,7 +3,7 @@ Utilizing the most used CSS Preprocesser - SASS to build a Web Style Guide.
 
 (Web Style Guide)[https://melvin-viana.github.io/webStyleGuide/]
 
-##Lessons Learned
+## Lessons Learned
 1. Variables
 2. SCSS
 3. Partial Files
