@@ -1,12 +1,8 @@
-# FEWD - Web Style Guide
-Utilizing the most used CSS Preprocesser - SASS to build a Web Style Guide.
+# Web Style Guide
+Creating a CSS framework by creating frequently used CSS styles with SASS.
 
 [Web Style Guide](https://melvin-viana.github.io/webStyleGuide/)
 
-## Lessons Learned
-1. Variables
-2. SCSS
-3. Partial Files
-4. Mixins
-5. Placeholders
-6. Color Functions and Custom Functions
+# Tech Stack
+1. SASS
+2. HTML
